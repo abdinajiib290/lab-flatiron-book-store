@@ -47,11 +47,11 @@ const bookStore = {
 
 const bookStoreTitle = document.getElementById("header");
 
-bookStoreTitle.textContent = "Flatbooks Technical Books";
+bookStoreTitle.textContent = bookStore.name;
 
 let bookList = document.getElementById('book-list')  //I added it later for appending bookContainer elemnents to bookList
 
-document.getElementById('delete-this').remove()
+let li = document.getElementById('delete-this').remove()
 
 for(let i=0; i<bookStore.books.length; i++){
 
