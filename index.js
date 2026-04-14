@@ -62,7 +62,8 @@ for(let i=0; i<bookStore.books.length; i++){
 
     bookTitle.textContent = bookStore.books[i].title;
     bookAuthor.textContent = bookStore.books[i].author;
-    bookImage.setAttribute('src', bookStore.books[i].image)
+    bookImage.setAttribute("src", bookStore.books[i].image);
+    // bookImage.src = bookStore.books[i].bookImage
 
     bookContainer.appendChild(bookTitle);
     bookContainer.appendChild(bookAuthor);
