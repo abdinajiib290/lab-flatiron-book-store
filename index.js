@@ -72,3 +72,4 @@ for(let i=0; i<bookStore.books.length; i++){
 
     bookList.appendChild(bookContainer);
 }
+console.log(bookList.innerHTML);
