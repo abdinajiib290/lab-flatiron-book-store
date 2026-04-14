@@ -55,10 +55,10 @@ document.getElementById('delete-this').remove()
 
 for(let i=0; i<bookStore.books.length; i++){
 
-    bookContainer = document.createElement('li');
-    bookTitle = document.createElement('h3');
-    bookAuthor = document.createElement('p');
-    bookImage = document.createElement('img');
+    const bookContainer = document.createElement('li');
+    const bookTitle = document.createElement('h3');
+    const bookAuthor = document.createElement('p');
+    const bookImage = document.createElement('img');
 
     bookTitle.textContent = bookStore.books[i].title;
     bookAuthor.textContent = bookStore.books[i].author;
