@@ -45,3 +45,25 @@ const bookStore = {
 
 // Write your code here!
 
+let bookStoreTitle = document.getElementById('header')
+
+bookStoreTitle.textContent = bookStore.name
+
+let bookList = document.getElementById('book-list')  //I added it later for appending bookContainer elemnents to bookList
+
+for(let i=0; i<bookStore.books.length; i++){
+    bookContainer = document.createElement('li');
+    bookTitle = document.createElement('h3');
+    bookAuthor = document.createElement('p');
+    bookImage = document.createElement('img');
+
+    bookTitle.textContent = bookStore.books[i].title;
+    bookAuthor.textContent = bookStore.books[i].author;
+    bookImage.src = bookStore.books[i].imageUrl;
+
+    bookContainer.appendChild(bookTitle);
+    bookContainer.appendChild(bookAuthor);
+    bookContainer.appendChild(bookImage);
+
+    bookList.appendChild(bookContainer);
+}
